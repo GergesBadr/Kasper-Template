@@ -99,8 +99,7 @@ a{
     background-color: var(--main-color);
     right: 15px;
     bottom: 15px;
-    font-size: 20px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +116,33 @@ a{
 }
 .to-top-btn:hover{
     background-color: #1787E0;
+}
+.to-top-btn:hover i{
+    animation: scroll-btn 0.5s infinite alternate;
+    -webkit-animation: scroll-btn 0.5s infinite alternate;
+}
+@keyframes scroll-btn{
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-6px);
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        -o-transform: translateY(-6px);
+}
+    100%{
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        -moz-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+}
 }
 /* end global rules */
 /* start header*/
@@ -906,6 +932,16 @@ header nav .form i{
     padding: 10px 20px;
     border: 2px solid var(--main-color);
     color: black;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.pricing .plan .footer a:hover{
+    background-color: var(--main-color);
+    color: white;
+
 }
 .pricing .container .p-cont{
     text-align: center;
@@ -913,14 +949,29 @@ header nav .form i{
     font-size: 18px;
 }
 .pricing .container .link-cont{
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0px;
     color: white;
     background-color: var(--main-color);
     padding: 15px 30px;
-    border-radius: 10px 10px 10px 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 30px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.pricing .container .link-cont:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 /* end pricing */
 /* start subscribe */
@@ -976,6 +1027,21 @@ header nav .form i{
     caret-color: var(--main-color);
     border: none;
 }
+.subscribe form input[type="email"]::placeholder{
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.subscribe form input[type="email"]:focus::placeholder{
+    opacity: 0;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
 .subscribe form input[type="email"]:focus{
     outline: none;
 }
@@ -1022,6 +1088,21 @@ header nav .form i{
     border-radius: 10px 10px 10px 0;
     position: relative;
 }
+.contact .box form .main::placeholder{
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.contact .box form .main:focus::placeholder{
+    opacity: 0;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+}
 .contact .box form .main:focus{
     outline: none;
 }
@@ -1030,15 +1111,32 @@ header nav .form i{
     resize: none;
 }
 .contact .box form input[type="submit"]{
-    display: flex;
-    margin-left: auto;
     border: none;
     padding: 15px 30px;
-    border-radius: 10px 10px 10px 0;
     font-size: 15px;
     color: white;
     background-color: var(--main-color);
     cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 1px auto;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact .box form input[type="submit"]:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 .contact .box .info{
     flex-basis: 25%;
