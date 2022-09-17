@@ -740,12 +740,22 @@ header nav .form i{
 .progress-holder .prog{
     background-color: #dedadc;
     height: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .progress-holder .prog span{
     position: relative;
     display: block;
     background-color: var(--main-color);
     height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .progress-holder .prog span::before{
     content: attr(data-progress);
@@ -753,7 +763,7 @@ header nav .form i{
     width: 35px;
     height: 20px;
     right: -16px;
-    top: -30px;
+    top: -33px;
     background-color: #333;
     color: white;
     font-size: 12px;
@@ -769,7 +779,7 @@ header nav .form i{
     border-style: solid;
     border-color: #333 transparent transparent transparent;
     right: -8px;
-    top: -15px;
+    top: -18px;
 }
 /* end skill */
 /* start quote */
